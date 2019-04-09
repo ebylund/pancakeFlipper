@@ -9,12 +9,12 @@ internal class StackAlgorithmTest {
     fun testBottomUpWithTopMinus() {
         assertEquals(
                 CaseResult("--+-++", 3, 1),
-                StackAlgorithm.bottomUpWithTopMinus("--+-++", 0)
+                StackAlgorithm.bottomUpWithTopMinus("--+-++", 1)
         )
 
         assertEquals(
                 CaseResult("-----", 1, 4),
-                StackAlgorithm.bottomUpWithTopMinus("-----", 3)
+                StackAlgorithm.bottomUpWithTopMinus("-----", 4)
         )
     }
 

@@ -17,7 +17,7 @@ val sampleInput = """
 """.trimIndent()
 
 fun main(args: Array<String>) {
-    if (args[0].isNotEmpty()) {
+    if (args.size > 0) {
         run(File(args[0]).readLines().drop(1))
     } else {
         run(sampleInput.split("\n").drop(1))
